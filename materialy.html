@@ -64,11 +64,9 @@
         <input type="text" id="searchInput" placeholder="Hledej v otázkách..." 
             style="padding: 0.5rem 1rem; font-size: 1rem; width: 80%; max-width: 400px; border-radius: 8px; border: 1px solid #ccc;">
     </div>
-
-        <button class="accordion">🛫 Cestovní ruch</button>
-<button class="accordion" onclick="togglePDF()">🛫 Cestovní ruch</button>
-<div id="pdfPanel" class="panel" style="display: none;">
-  <iframe src="pdfs/CR - OKRUHY KE STÁTNÍ ZÁVĚREČNÉ ZKOUŠCE.pdf" width="100%" height="600px" style="border: none;"></iframe>
+<button class="accordion">🛫 Cestovní ruch</button>
+<div class="panel">
+  <iframe src="pdfs/cestovni_ruch.pdf" width="100%" height="600px" style="border: none;"></iframe>
 </div>
     <script>
         const acc = document.getElementsByClassName("accordion");
@@ -95,6 +93,14 @@
             q.style.display = text.includes(filter) ? "" : "none";
         });
     });
+</script>
+<script>
+  document.getElementById('btn-cestovni-ruch').addEventListener('click', function () {
+    const viewer = document.getElementById('pdf-viewer');
+    const iframe = document.getElementById('pdf-frame');
+    iframe.src = 'pdfs/cestovni_ruch.pdf'; // nezapomeň nahrát PDF do složky `pdfs`
+    viewer.style.display = 'block';
+  });
 </script>
 
 </body>
