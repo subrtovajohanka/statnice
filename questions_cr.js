@@ -1279,4 +1279,3 @@ window.questions = [
     answer: 1
   }
 ];
-window.questions = questions;
