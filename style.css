@@ -55,18 +55,16 @@ main h2 {
 }
 
 .option {
-    display: block;
-    margin: 1rem auto;
-    padding: 0.75rem 1rem;
-    background: #ffeef0;
-    border-radius: 10px;
-    cursor: pointer;
-    max-width: 400px;
-    text-align: center;        
-  display: flex;             
-  justify-content: center;    
-  align-items: center;        
-  min-height: 48px; 
+  margin: 1rem auto;
+  padding: 0.75rem 1rem;
+  background: #ffeef0;
+  border-radius: 10px;
+  cursor: pointer;
+  max-width: 400px;
+  text-align: center;
+  border: 1px solid #ccc;
+  width: 100%;
+}
 }
 
 .option.correct { background: #d4edda; }
@@ -165,9 +163,6 @@ footer {
   min-height: 48px;
 }
 
-  text-align: center;   
-  justify-content: center;    
-}
 #options {
   display: flex;
   flex-direction: column;
