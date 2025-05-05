@@ -23,8 +23,7 @@ function loadQuestions(callback) {
 function showQuestion() {
     let q = questions[currentQuestion];
     questionEl.textContent = q.question;
-    
-    // Zabalíme možnosti do kontejneru
+
     optionsEl.innerHTML = "";
     const wrapper = document.createElement("div");
     wrapper.className = "options-container";
@@ -39,12 +38,13 @@ function showQuestion() {
 
     optionsEl.appendChild(wrapper);
 }
+}
     });
 }
 
 function selectOption(button, index) {
     const correct = questions[currentQuestion].answer;
-    const buttons = optionsEl.querySelectorAll("button");
+    const buttons = document.querySelectorAll(".option-button");
     buttons.forEach(btn => btn.disabled = true);
     if (index === correct) {
         button.classList.add("correct");
