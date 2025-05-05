@@ -1,10 +1,24 @@
 let currentQuestion = 0;
 let score = 0;
+let questions = [];
 
 const questionEl = document.getElementById("question");
 const optionsEl = document.getElementById("options");
 const nextBtn = document.getElementById("next-btn");
 const resultEl = document.getElementById("result");
+
+function getOkruh() {
+    const params = new URLSearchParams(window.location.search);
+    return params.get("okruh") || "mikro";
+}
+
+function loadQuestions(callback) {
+    const okruh = getOkruh();
+    const script = document.createElement("script");
+    script.src = `questions_${okruh}.js`;
+    script.onload = callback;
+    document.body.appendChild(script);
+}
 
 function showQuestion() {
     let q = questions[currentQuestion];
@@ -48,4 +62,4 @@ function showResult() {
     resultEl.textContent = `Získal(a) jsi ${score} z ${questions.length} bodů.`;
 }
 
-showQuestion();
+loadQuestions(() => showQuestion());
