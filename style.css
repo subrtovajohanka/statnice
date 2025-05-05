@@ -209,4 +209,21 @@ footer {
   border-color: #f5c6cb;
   color: #721c24;
 }
-
+.disclaimer {
+  background: #fff0f5;
+  border-left: 5px solid #d28a8a;
+  padding: 1rem 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  max-width: 700px;
+  color: #5a2d2d;
+  font-size: 0.95rem;
+  text-align: left;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+}
+.disclaimer strong {
+  color: #8b0000;
+}
+.disclaimer em {
+  font-style: italic;
+}
