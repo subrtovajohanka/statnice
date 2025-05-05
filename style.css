@@ -198,5 +198,15 @@ footer {
 #next-btn:hover {
   background: #8a4a3f;
 }
+.option-button.correct {
+  background: #d4edda; 
+  border-color: #a5d6a7;
+  color: #2e7d32;
+}
 
+.option-button.wrong {
+  background: #f8d7da;
+  border-color: #f5c6cb;
+  color: #721c24;
+}
 
