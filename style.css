@@ -62,6 +62,11 @@ main h2 {
     border-radius: 10px;
     cursor: pointer;
     max-width: 400px;
+    text-align: center;        
+  display: flex;             
+  justify-content: center;    
+  align-items: center;        
+  min-height: 48px; 
 }
 
 .option.correct { background: #d4edda; }
@@ -145,7 +150,6 @@ footer {
 }
 
 .option-button {
-.option-button {
   width: 100%;
   max-width: 400px;
   padding: 0.75rem 1rem;
@@ -154,7 +158,13 @@ footer {
   border: 1px solid #ccc;
   cursor: pointer;
   transition: all 0.3s ease;
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 48px;
+}
+
   text-align: center;   
   justify-content: center;    
 }
