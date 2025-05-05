@@ -17,7 +17,10 @@ function loadQuestions(callback) {
     document.title = "Test: " + (okruh === "eko" ? "Ekonomie" : "Cestovní ruch");
     const script = document.createElement("script");
     script.src = `questions_${okruh}.js`;
-    script.onload = callback;
+    script.onload = () => {
+        questions = window.questions;
+        callback();
+    };
     document.body.appendChild(script);
 }
 
