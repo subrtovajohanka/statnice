@@ -46,16 +46,21 @@ function showQuestion() {
 function selectOption(button, index) {
     const correct = questions[currentQuestion].answer;
     const buttons = document.querySelectorAll(".option-button");
-    buttons.forEach(btn => btn.disabled = true);
+
+    buttons.forEach((btn, i) => {
+        btn.disabled = true;
+        if (i === correct) {
+            btn.classList.add("correct");
+        }
+    });
+
     if (index === correct) {
         button.classList.add("correct");
         score++;
     } else {
         button.classList.add("wrong");
-        buttons[correct].classList.add("correct");
-    }
+    } 
 }
-
 nextBtn.addEventListener("click", () => {
     currentQuestion++;
     if (currentQuestion < questions.length) {
