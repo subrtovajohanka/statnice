@@ -1,4 +1,4 @@
-const questions = [
+window.questions = [
   {
     question: "Jaký je podíl cestovního ruchu na HDP České republiky (včetně nepřímých a indukovaných efektů)?",
     options: [
