@@ -1309,3 +1309,4 @@ questions = [
   }
 ];
 )
+window.questions = questions;
