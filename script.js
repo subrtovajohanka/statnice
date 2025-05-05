@@ -51,7 +51,8 @@ function selectOption(button, index) {
         btn.disabled = true;
         if (i === correct) {
             btn.classList.add("correct");
-        } else if (i === index) {
+        } 
+        if (i === index && index !== correct) {
             btn.classList.add("wrong");
         }
     });
