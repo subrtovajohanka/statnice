@@ -72,10 +72,14 @@
     const container = document.getElementById("quiz-container");
 
     function showQuestion() {
-      const q = questions[current];
-      container.innerHTML = `<h2>${q.question}</h2>` + q.options.map((opt, i) => {
-        return `<div class="option" onclick="checkAnswer(${i})">${opt}</div>`;
-      }).join("");
+  const q = questions[current];
+  const container = document.getElementById("quiz-container");
+  container.innerHTML = `
+    <h2>${q.question}</h2>
+    <div class="options-container">
+      ${q.options.map((opt, i) => `<div class="option" onclick="checkAnswer(${i})">${opt}</div>`).join("")}
+    </div>
+  `;
     }
 
     window.checkAnswer = function(selected) {
