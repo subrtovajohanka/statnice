@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <title>Test: Cestovní ruch</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .question-box {
+      max-width: 600px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background-color: #fff;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .option {
+      display: block;
+      padding: 0.5rem;
+      margin: 0.5rem 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      cursor: pointer;
+    }
+    .option.correct {
+      background-color: #d4edda;
+      border-color: #28a745;
+    }
+    .option.incorrect {
+      background-color: #f8d7da;
+      border-color: #dc3545;
+    }
+    .score {
+      text-align: center;
+      font-weight: bold;
+      margin-top: 2rem;
+    }
+    .next-button {
+      display: block;
+      margin: 2rem auto 0;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      border: none;
+      background-color: #6c3e2d;
+      color: white;
+      cursor: pointer;
+    }
+    .next-button:hover {
+      background-color: #8a4a3f;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="text-align: center;">🧭 Test</h1>
+  <div class="question-box" id="quiz-container">Načítám otázky...</div>
+  <div class="score" id="score"></div>
+
+  <script>
+    // Zjistí okruh z URL parametru
+    function getOkruh() {
+      const params = new URLSearchParams(window.location.search);
+      return params.get("okruh") || "cr"; // Výchozí je "cr"
+    }
+
+    const okruh = getOkruh();
+    const script = document.createElement("script");
+    script.src = `questions_${okruh}.js`;
+    script.onload = () => startQuiz();
+    script.onerror = () => {
+      document.getElementById("quiz-container").innerText = "Nepodařilo se načíst otázky.";
+    };
+    document.body.appendChild(script);
+
+    let current = 0;
+    let correct = 0;
+
+    function startQuiz() {
+      const questions = window.questions;
+      const container = document.getElementById("quiz-container");
+
+      function showQuestion() {
+        const q = questions[current];
+        container.innerHTML = `<h2>${q.question}</h2>` + q.options.map((opt, i) => {
+          return `<div class="option" onclick="checkAnswer(${i})">${opt}</div>`;
+        }).join("");
+      }
+
+      window.checkAnswer = function(selected) {
+        const q = questions[current];
+        const options = document.querySelectorAll(".option");
+
+        options.forEach((el, i) => {
+          el.onclick = null;
+          if (i === q.answer || i === q.correctIndex) {
+            el.classList.add("correct");
+          } else if (i === selected) {
+            el.classList.add("incorrect");
+          }
+        });
+
+        if (selected === q.answer || selected === q.correctIndex) correct++;
+
+        document.getElementById("score").innerText = `Skóre: ${correct} / ${questions.length}`;
+
+        if (current < questions.length - 1) {
+          const next = document.createElement("button");
+          next.innerText = "Další otázka";
+          next.className = "next-button";
+          next.onclick = () => {
+            current++;
+            showQuestion();
+          };
+          container.appendChild(next);
+        } else {
+          const finish = document.createElement("p");
+          finish.innerHTML = "<strong>Hotovo!</strong>";
+          container.appendChild(finish);
+        }
+      };
+
+      showQuestion();
+    }
+  </script>
+</body>
+</html>
