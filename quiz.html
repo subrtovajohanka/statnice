@@ -54,72 +54,76 @@
   <h1 style="text-align: center;">🧭 Test</h1>
   <div class="question-box" id="quiz-container">Načítám otázky...</div>
   <div class="score" id="score"></div>
+    <script>
+  // Zjistí okruh z URL parametru
+  function getOkruh() {
+    const params = new URLSearchParams(window.location.search);
+    return params.get("okruh") || "cr"; // Výchozí je "cr"
+  }
 
-  <script>
-    // Zjistí okruh z URL parametru
-    function getOkruh() {
-      const params = new URLSearchParams(window.location.search);
-      return params.get("okruh") || "cr"; // Výchozí je "cr"
+  const okruh = getOkruh();
+  const script = document.createElement("script");
+  script.src = `questions_${okruh}.js`;
+  script.onload = () => startQuiz();
+  script.onerror = () => {
+    document.getElementById("quiz-container").innerText = "Nepodařilo se načíst otázky.";
+  };
+  document.body.appendChild(script);
+
+  let current = 0;
+  let correct = 0;
+  let questions = [];
+
+  function startQuiz() {
+    questions = [...window.questions]; // zkopíruj pole (nebo použij přímo)
+    questions.sort(() => Math.random() - 0.5); // 🔀 zamíchej
+
+    const container = document.getElementById("quiz-container");
+
+    function showQuestion() {
+      const q = questions[current];
+      container.innerHTML = `<h2>${q.question}</h2>` + q.options.map((opt, i) => {
+        return `<div class="option" onclick="checkAnswer(${i})">${opt}</div>`;
+      }).join("");
     }
 
-    const okruh = getOkruh();
-    const script = document.createElement("script");
-    script.src = `questions_${okruh}.js`;
-    script.onload = () => startQuiz();
-    script.onerror = () => {
-      document.getElementById("quiz-container").innerText = "Nepodařilo se načíst otázky.";
-    };
-    document.body.appendChild(script);
+    window.checkAnswer = function(selected) {
+      const q = questions[current];
+      const options = document.querySelectorAll(".option");
 
-    let current = 0;
-    let correct = 0;
-
-    function startQuiz() {
-      const questions = window.questions;
-      const container = document.getElementById("quiz-container");
-
-      function showQuestion() {
-        const q = questions[current];
-        container.innerHTML = `<h2>${q.question}</h2>` + q.options.map((opt, i) => {
-          return `<div class="option" onclick="checkAnswer(${i})">${opt}</div>`;
-        }).join("");
-      }
-
-      window.checkAnswer = function(selected) {
-        const q = questions[current];
-        const options = document.querySelectorAll(".option");
-
-        options.forEach((el, i) => {
-          el.onclick = null;
-          if (i === q.answer || i === q.correctIndex) {
-            el.classList.add("correct");
-          } else if (i === selected) {
-            el.classList.add("incorrect");
-          }
-        });
-
-        if (selected === q.answer || selected === q.correctIndex) correct++;
-
-        document.getElementById("score").innerText = `Skóre: ${correct} / ${questions.length}`;
-
-        if (current < questions.length - 1) {
-          const next = document.createElement("button");
-          next.innerText = "Další otázka";
-          next.className = "next-button";
-          next.onclick = () => {
-            current++;
-            showQuestion();
-          };
-          container.appendChild(next);
-        } else {
-          const finish = document.createElement("p");
-          finish.innerHTML = "<strong>Hotovo!</strong>";
-          container.appendChild(finish);
+      options.forEach((el, i) => {
+        el.onclick = null;
+        if (i === q.answer || i === q.correctIndex) {
+          el.classList.add("correct");
+        } else if (i === selected) {
+          el.classList.add("incorrect");
         }
-      };
+      });
 
-      showQuestion();
-    }
+      if (selected === q.answer || selected === q.correctIndex) correct++;
+
+      document.getElementById("score").innerText = `Skóre: ${correct} / ${questions.length}`;
+
+      if (current < questions.length - 1) {
+        const next = document.createElement("button");
+        next.innerText = "Další otázka";
+        next.className = "next-button";
+        next.onclick = () => {
+          current++;
+          showQuestion();
+        };
+        container.appendChild(next);
+      } else {
+        const finish = document.createElement("p");
+        finish.innerHTML = "<strong>Hotovo!</strong>";
+        container.appendChild(finish);
+      }
+    };
+
+    showQuestion();
+  }
+</script>
+
   </script>
 </body>
 </html>
