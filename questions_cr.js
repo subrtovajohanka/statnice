@@ -43,20 +43,17 @@ const questions = [
       "C) Green Deal Tourism"
     ],
     answer: 1
-  }
-];
   },
   {
     question: "Co je hlavním cílem destinačního managementu?",
     options: [
-      "Podpora domácí výroby",
-      "Zvýšení návštěvnosti a udržitelného rozvoje cestovního ruchu",
-      "Kontrola kvality potravin",
-      "Zajištění levného ubytování"
+      "A) Podpora domácí výroby",
+      "B) Zvýšení návštěvnosti a udržitelného rozvoje cestovního ruchu",
+      "C) Kontrola kvality potravin",
+      "D) Zajištění levného ubytování"
     ],
     answer: 1
-  }
-    
+  },
   {
     question: "Který zákon řadí cestovní ruch pod gesci Ministerstva pro místní rozvoj ČR?",
     options: [
@@ -101,7 +98,7 @@ const questions = [
       "C) Kontrola výběru turistických poplatků"
     ],
     answer: 1
-  }
+  },
   {
     question: "Která organizace je hlavním globálním aktérem v oblasti cestovního ruchu?",
     options: [
@@ -155,9 +152,7 @@ const questions = [
       "C) Rozdělují dotace přímo podnikatelům"
     ],
     answer: 1
-  }
-
-
+  },
   {
     question: "Který orgán je hlavním garantem financování cestovního ruchu na úrovni státu?",
     options: [
@@ -211,9 +206,7 @@ const questions = [
       "C) Nemohou vybírat místní poplatky"
     ],
     answer: 1
-  }
-
-
+  },
   {
     question: "Co nejlépe vystihuje pojem konkurenceschopnost destinace?",
     options: [
@@ -276,9 +269,7 @@ const questions = [
       "C) Vyhodnocování nákladů DMO"
     ],
     answer: 1
-  }
-
-
+  },
   {
     question: "Co je hlavním cílem statistického výkaznictví v cestovním ruchu?",
     options: [
@@ -341,7 +332,7 @@ const questions = [
       "C) Zkoumá chování, spokojenost a motivace turistů"
     ],
     answer: 2
-  }
+  },
   {
     question: "Co znamená udržitelný rozvoj cestovního ruchu?",
     options: [
@@ -404,9 +395,7 @@ const questions = [
       "C) Protože udržitelnost vyžaduje rovnováhu všech tří"
     ],
     answer: 2
-  }
-
-
+  },
   {
     question: "Co označujeme pojmem regionální disparity?",
     options: [
@@ -469,9 +458,7 @@ const questions = [
       "C) Ekologickou, ekonomickou, sociální a institucionální kapacitu"
     ],
     answer: 2
-  }
-
-questions = [
+  },
   {
     question: "Co je hlavním účelem destinačního managementu?",
     options: [
@@ -543,9 +530,7 @@ questions = [
       "Monitoring návštěvnosti"
     ],
     answer: 1
-  }
-];
-questions = [
+  },
   {
     question: "Jaký je hlavní cíl řízení cestovního ruchu v destinaci?",
     options: [
@@ -608,8 +593,7 @@ questions = [
       "Zvýšení cen v turistické sezóně"
     ],
     answer: 1
-  }
-  questions = [
+  },
   {
     question: "Která organizace působí jako hlavní globální autorita v oblasti cestovního ruchu?",
     options: [
@@ -681,8 +665,7 @@ questions = [
       "Nedostatek kulturního dědictví"
     ],
     answer: 1
-  }
-    questions = [
+  },
   {
     question: "Jaký je hlavní účel organizace destinačního managementu (DMO)?",
     options: [
@@ -754,8 +737,7 @@ questions = [
       "Přílišná účast obyvatel na rozhodování"
     ],
     answer: 1
-  }
-      questions = [
+  },
   {
     question: "Co je hlavním cílem teritoriálního marketingu?",
     options: [
@@ -827,8 +809,7 @@ questions = [
       "Zrušení daňové povinnosti pro podnikatele"
     ],
     answer: 1
-  }
-        questions = [
+  },  
   {
     question: "Co je hlavním cílem marketingové strategie destinace cestovního ruchu?",
     options: [
@@ -900,8 +881,7 @@ questions = [
       "Slouží k výpočtu daně z cestovního ruchu"
     ],
     answer: 1
-  }
-
+  },
   {
     question: "Který zákon tvoří legislativní rámec pro strategické dokumenty rozvoje cestovního ruchu v ČR?",
     options: [
@@ -973,8 +953,7 @@ questions = [
       "Nahrazuje správní rozhodnutí v území"
     ],
     answer: 1
-  }
-  
+  },
   {
     question: "Který orgán je hlavním gestorem státní politiky cestovního ruchu v ČR?",
     options: [
@@ -1046,9 +1025,7 @@ questions = [
       "Zřízení povinného vstupného do města"
     ],
     answer: 0
-  }
-
-
+  },
   {
     question: "Který z následujících produktů je typickým klíčovým produktem cestovního ruchu v ČR?",
     options: [
@@ -1111,9 +1088,7 @@ questions = [
       "Aby bylo možné efektivně cílit nabídku a propagaci"
     ],
     answer: 2
-  }
-
-
+  },
   {
     question: "Jaké je klíčové motto strategie rozvoje cestovního ruchu ČR 2021–2030?",
     options: [
@@ -1176,9 +1151,7 @@ questions = [
       "Mají zastřešovat činnost DMO a integrovat aktéry"
     ],
     answer: 2
-  }
-
-
+  },
   {
     question: "Který z následujících příkladů NEspadá do kolaborativní ekonomiky v cestovním ruchu?",
     options: [
@@ -1241,9 +1214,7 @@ questions = [
       "Zákaz využívání sdílených koloběžek"
     ],
     answer: 1
-  }
-
-
+  },
   {
     question: "Co je hlavním cílem trendu zvaného slow tourism?",
     options: [
@@ -1308,5 +1279,4 @@ questions = [
     answer: 1
   }
 ];
-)
 window.questions = questions;
