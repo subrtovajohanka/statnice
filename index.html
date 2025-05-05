@@ -2,14 +2,40 @@
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
-    <title>Státnice - Výběr okruhu</title>
+    <title>Státnice - Výběr tématu</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Vyber si okruh</h1>
-    <a href="quiz.html?okruh=mikro" class="button">Mikroekonomie</a>
-    <a href="quiz.html?okruh=makro" class="button">Makroekonomie</a>
-    <a href="quiz.html?okruh=ucetnictvi" class="button">Manažerské účetnictví</a>
-    <a href="flashcards.html" class="button">Flashcards režim</a>
+    <header>
+        <h1>Státnice UCP – obor MDCR</h1>
+    </header>
+
+    <main>
+        <h2>Vyber si oblast</h2>
+
+        <div class="category">
+            <img src="letadlo.png" alt="Cestovní ruch" class="icon" />
+            <h3>Cestovní ruch</h3>
+            <a href="#" class="button disabled">Zatím nepřipraveno</a>
+        </div>
+
+        <div class="category">
+            <img src="graf.png" alt="Ekonomie" class="icon" />
+            <h3>Ekonomie</h3>
+            <a href="quiz.html?okruh=mikro" class="button">Mikroekonomie</a>
+            <a href="quiz.html?okruh=makro" class="button">Makroekonomie</a>
+            <a href="quiz.html?okruh=ucetnictvi" class="button">Manažerské účetnictví</a>
+        </div>
+
+        <div class="category">
+            <img src="894a3c9f-2aa0-49ca-9ed6-c183037651ec.png" alt="Flashcards" class="icon" />
+            <h3>Flashcards</h3>
+            <a href="flashcards.html" class="button">Spustit flashcards</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>by Johanka Šubrtová</p>
+    </footer>
 </body>
 </html>
