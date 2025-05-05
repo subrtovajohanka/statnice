@@ -121,4 +121,13 @@ footer {
 .sub-buttons {
     margin-top: 0.5rem;
 }
+#countdown {
+    animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
 
