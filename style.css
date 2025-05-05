@@ -122,12 +122,15 @@ footer {
     margin-top: 0.5rem;
 }
 #countdown {
-    animation: fadeIn 1s ease-out;
+    color: #c71585;
+    font-size: 1.2rem;
+    animation: pulse 1.5s infinite ease-in-out;
 }
 
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+@keyframes pulse {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.05); opacity: 0.7; }
+    100% { transform: scale(1); opacity: 1; }
 }
 
 
