@@ -60,9 +60,6 @@
 <body>
     <h1>📚 Materiály ke státnicím</h1>
     <div class="content">
-    <div style="text-align: center; margin-bottom: 2rem;">
-        <input type="text" id="searchInput" placeholder="Hledej v otázkách..." 
-            style="padding: 0.5rem 1rem; font-size: 1rem; width: 80%; max-width: 400px; border-radius: 8px; border: 1px solid #ccc;">
     </div>
 <button class="accordion">🛫 Cestovní ruch</button>
 <div class="panel">
@@ -88,18 +85,6 @@
             });
         }
     </script>
-
-<script>
-    const searchInput = document.getElementById("searchInput");
-    searchInput.addEventListener("keyup", function () {
-        const filter = searchInput.value.toLowerCase();
-        const questions = document.querySelectorAll(".question");
-        questions.forEach(q => {
-            const text = q.textContent.toLowerCase();
-            q.style.display = text.includes(filter) ? "" : "none";
-        });
-    });
-</script>
 <script>
   document.getElementById('btn-cestovni-ruch').addEventListener('click', function () {
     const viewer = document.getElementById('pdf-viewer');
