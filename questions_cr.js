@@ -1,11 +1,16 @@
 const questions = [
   {
-    question: "Jaká je hlavní funkce destinačního managementu?",
+    question: "Který rok vznikla první destinační agentura v Ústeckém kraji?",
+    options: ["2004", "2011", "2017", "2021"],
+    answer: 1 // správná je "2011"
+  },
+  {
+    question: "Co je hlavním cílem destinačního managementu?",
     options: [
-      "Těžba surovin v regionu",
-      "Plánování a koordinace rozvoje cestovního ruchu",
+      "Podpora domácí výroby",
+      "Zvýšení návštěvnosti a udržitelného rozvoje cestovního ruchu",
       "Kontrola kvality potravin",
-      "Organizace letecké dopravy"
+      "Zajištění levného ubytování"
     ],
     answer: 1
   }
