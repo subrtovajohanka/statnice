@@ -14,6 +14,7 @@ function getOkruh() {
 
 function loadQuestions(callback) {
     const okruh = getOkruh();
+    document.title = "Test: " + (okruh === "eko" ? "Ekonomie" : "Cestovní ruch");
     const script = document.createElement("script");
     script.src = `questions_${okruh}.js`;
     script.onload = callback;
