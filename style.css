@@ -74,20 +74,6 @@ main h2 {
   transition: background 0.3s ease;
 }
 
-.option-button.correct::after {
-  content: " ✓";
-  color: green;
-  font-weight: bold;
-  margin-left: 8px;
-}
-
-.option-button.wrong::after {
-  content: " ✗";
-  color: red;
-  font-weight: bold;
-  margin-left: 8px;
-}
-
 .icon {
     height: 72px;
     width: auto;
@@ -209,16 +195,18 @@ footer {
 #next-btn:hover {
   background: #8a4a3f;
 }
-.option-button.correct {
-  background: #d4edda; 
-  border-color: #a5d6a7;
-  color: #2e7d32;
+.option-button.correct::after {
+  content: " ✓";
+  color: green;
+  font-weight: bold;
+  margin-left: 8px;
 }
 
-.option-button.wrong {
-  background: #f8d7da;
-  border-color: #f5c6cb;
-  color: #721c24;
+.option-button.wrong::after {
+  content: " ✗";
+  color: red;
+  font-weight: bold;
+  margin-left: 8px;
 }
 .disclaimer {
   background: #fff0f5;
