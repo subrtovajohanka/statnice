@@ -55,20 +55,11 @@
   <div class="question-box" id="quiz-container"></div>
   <div class="score" id="score"></div>
 
-  <script>
-    const questions = [
-      {
-        question: "Jaká je hlavní funkce DMO?",
-        options: [
-          "A) Výroba suvenýrů",
-          "B) Koordinace rozvoje cestovního ruchu",
-          "C) Prodej zájezdů"
-        ],
-        correctIndex: 1
-      },
-      // další otázky přidáš sem
-    ];
+  <!-- 📥 Načti otázky z externího JS -->
+  <script src="questions_cr.js"></script>
 
+  <script>
+    const questions = window.questions;
     let current = 0;
     let correct = 0;
 
@@ -86,14 +77,14 @@
 
       options.forEach((el, i) => {
         el.onclick = null;
-        if (i === q.correctIndex) {
+        if (i === q.answer || i === q.correctIndex) {
           el.classList.add("correct");
         } else if (i === selected) {
           el.classList.add("incorrect");
         }
       });
 
-      if (selected === q.correctIndex) correct++;
+      if (selected === q.answer || selected === q.correctIndex) correct++;
 
       document.getElementById("score").innerText = `Skóre: ${correct} / ${questions.length}`;
 
