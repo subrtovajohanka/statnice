@@ -450,7 +450,608 @@ window.questions = [
       "Zvýšení daní"
     ],
     answer: 2
-  }
-];
+  },
+{
+  question: "Co zachycuje model IS-LM?",
+  options: [
+    "Rozdělení výdajů mezi domácnosti a firmy",
+    "Současné určení rovnováhy na trhu práce a statků",
+    "Rovnovážné hodnoty úrokové sazby a národního důchodu",
+    "Rovnováhu mezi exportem a importem"
+  ],
+  answer: 2
+},
+{
+  question: "Který bod v modelu IS-LM představuje makroekonomickou rovnováhu?",
+  options: [
+    "Bod S",
+    "Bod T",
+    "Bod A",
+    "Bod E"
+  ],
+  answer: 3
+},
+{
+  question: "Co představuje křivka IS v modelu IS-LM?",
+  options: [
+    "Rovnováhu mezi penězi a úsporami",
+    "Rovnovážné kombinace úrokové míry a reálného produktu na trhu statků",
+    "Změny ve spotřebě a investicích",
+    "Rovnovážné ceny ve veřejném sektoru"
+  ],
+  answer: 1
+},
+  {
+  question: "Co způsobí posun křivky IS?",
+  options: [
+    "Změna nabídky peněz",
+    "Změna autonomních výdajů",
+    "Změna poptávky po penězích",
+    "Změna daňové sazby centrální banky"
+  ],
+  answer: 1
+},
+ {
+  question: "Co způsobí fiskální expanze v modelu IS-LM?",
+  options: [
+    "Posun křivky LM doleva",
+    "Snížení úrokové sazby",
+    "Posun křivky IS doprava",
+    "Zvýšení cenové hladiny"
+  ],
+  answer: 2
+},
+{
+  question: "Kdy je fiskální expanze nejúčinnější podle modelu IS-LM?",
+  options: [
+    "Když je křivka LM vertikální",
+    "Když poptávka po penězích nereaguje na úrokovou míru",
+    "Když jsme v pasti likvidity a LM je horizontální",
+    "Když úroková sazba roste rychle"
+  ],
+  answer: 2
+},
+{
+  question: "Co je tzv. 'crowding out' efekt?",
+  options: [
+    "Snížení exportu kvůli poklesu domácí měny",
+    "Snížení soukromých investic kvůli růstu úrokové sazby po fiskální expanzi",
+    "Zvýšení nezaměstnanosti vlivem monetární restrikce",
+    "Snížení nabídky peněz vlivem inflace"
+  ],
+  answer: 1
+},
+{
+  question: "Který nástroj NEpatří mezi nástroje monetární politiky?",
+  options: [
+    "Změna diskontní sazby",
+    "Změna daní",
+    "Operace na volném trhu",
+    "Stanovení povinných minimálních rezerv"
+  ],
+  answer: 1
+},
+{
+  question: "Co způsobí monetární expanze podle modelu IS-LM?",
+  options: [
+    "Posun křivky IS doleva",
+    "Snížení rovnovážného důchodu",
+    "Snížení úrokové míry a posun křivky LM doprava",
+    "Zvýšení vládních výdajů"
+  ],
+  answer: 2
+},
+{
+  question: "Co je hlavním cílem manažerského účetnictví v podniku?",
+  options: [
+    "Přesné plnění zákonných povinností vůči státu",
+    "Poskytnout informace finančním institucím",
+    "Poskytnout informace pro řízení podniku a jeho strategické rozhodování",
+    "Zajistit auditní dohled nad účetní závěrkou"
+  ],
+  answer: 2
+},
+  {
+  question: "Který z následujících úkolů NEspadá do hlavních skupin úkolů manažerského účetnictví?",
+  options: [
+    "Zjišťování skutečných jevů a informací",
+    "Stanovení mzdové politiky státu",
+    "Kontrola a rozbor informací",
+    "Příprava informací pro rozhodování"
+  ],
+  answer: 1
+},
+  {
+  question: "Mezi nástroje věcného (naturálního) řízení v rámci MÚ patří například:",
+  options: [
+    "Kalkulace a rozpočty",
+    "Plán prodeje a řízení využití kapacit",
+    "Zisk a aktiva",
+    "Účetní závěrka"
+  ],
+  answer: 1
+},
+  {
+  question: "Co manažerské účetnictví sleduje především?",
+  options: [
+    "Plnění daňových povinností",
+    "Vývoj mezd zaměstnanců",
+    "Skladbu a vývoj nákladů a výkonnost podniku",
+    "Přípravu účetní závěrky"
+  ],
+  answer: 2
+},
+  {
+  question: "Která úroveň řízení v podniku se zaměřuje na dlouhodobé cíle a efektivnost?",
+  options: [
+    "Operativní řízení",
+    "Taktické řízení",
+    "Strategické řízení",
+    "Administrativní řízení"
+  ],
+  answer: 2
+},
+  {
+  question: "Jaký je hlavní rozdíl mezi náklady ve finančním a manažerském účetnictví?",
+  options: [
+    "Manažerské účetnictví eviduje pouze příjmy, finanční pouze výdaje",
+    "Finanční účetnictví zachycuje náklady pouze na základě peněžních toků, manažerské pracuje i s hodnotovým a ekonomickým pojetím",
+    "Finanční účetnictví sleduje jen interní náklady, manažerské jen externí",
+    "Mezi nimi není žádný rozdíl"
+  ],
+  answer: 1
+},
+  {
+  question: "Které z následujících hledisek NENÍ běžně používaným způsobem třídění nákladů v MÚ?",
+  options: [
+    "Dle účelu vynaložení",
+    "Dle kalkulace",
+    "Dle barvy materiálu",
+    "Dle objemu výroby"
+  ],
+  answer: 2
+},
+  {
+  question: "Jaký je význam oportunitních nákladů?",
+  options: [
+    "Zohledňují náklady, které jsou již zaplaceny",
+    "Vyjadřují ztrátu z nejlepší nevyužité alternativy",
+    "Jedná se o mzdové náklady v manažerském účetnictví",
+    "Používají se výhradně ve finančním účetnictví"
+  ],
+  answer: 1
+},
+  {
+  question: "Co znamená pojem hospodárnost v kontextu řízení nákladů?",
+  options: [
+    "Maximalizace zisku bez ohledu na náklady",
+    "Snížení objemu produkce při rostoucích nákladech",
+    "Úspornost – dosažení požadovaných výkonů s co nejnižšími náklady",
+    "Přesné účtování všech výdajů"
+  ],
+  answer: 2
+},
+  {
+  question: "Které pojetí nákladů pracuje s myšlenkou ušlého efektu z nevyužité příležitosti?",
+  options: [
+    "Finanční pojetí nákladů",
+    "Hodnotové pojetí nákladů",
+    "Ekonomické pojetí nákladů",
+    "Daňové pojetí nákladů"
+  ],
+  answer: 2
+},
+{
+  question: "Jaký je hlavní účel kalkulace v manažerském účetnictví?",
+  options: [
+    "Zákonné vykazování nákladů",
+    "Zjednodušení daní",
+    "Stanovení cen produktů a analýza ziskovosti",
+    "Účetní uzávěrka"
+  ],
+  answer: 2
+},
+  {
+  question: "Co označujeme jako kalkulační jednici?",
+  options: [
+    "Množství materiálu v kalkulaci",
+    "Jeden konkrétní výkon vyjádřený měrnou jednotkou",
+    "Fixní náklady rozpočítané na období",
+    "Časový rámec pro účetní uzávěrku"
+  ],
+  answer: 1
+},
+  {
+  question: "Jaký je rozdíl mezi přímými a nepřímými náklady?",
+  options: [
+    "Přímé jsou vždy variabilní, nepřímé vždy fixní",
+    "Přímé náklady lze přiřadit ke konkrétnímu výkonu, nepřímé nikoli",
+    "Nepřímé náklady nejsou skutečné, ale pouze odhadované",
+    "Přímé náklady vznikají jen ve službách"
+  ],
+  answer: 1
+},
+  {
+  question: "Co je retrográdní kalkulace?",
+  options: [
+    "Kalkulace s použitím historických nákladů",
+    "Výpočet ceny zpětně od požadovaného zisku",
+    "Typ kalkulace bez přímých nákladů",
+    "Zastaralý způsob účetnictví"
+  ],
+  answer: 1
+},
+  {
+  question: "Jaký typ kalkulace je typický pro hodnocení efektivnosti nového výrobku bez známých výkonových norem?",
+  options: [
+    "Plánovaná kalkulace",
+    "Operativní kalkulace",
+    "Výsledná kalkulace",
+    "Propočtová kalkulace"
+  ],
+  answer: 3
+},
+{
+  question: "Jaký je hlavní rozdíl mezi plánem a rozpočtem v řízení podniku?",
+  options: [
+    "Plán stanovuje hodnotový úkol, zatímco rozpočet určuje strategii",
+    "Plán určuje cíl, rozpočet stanoví konkrétní hodnotové limity a finanční krytí",
+    "Rozpočet je vždy dlouhodobý, plán krátkodobý",
+    "Plán je pouze součást rozpočtu"
+  ],
+  answer: 1
+},
+{
+  question: "Co je charakteristické pro klouzavý rozpočet?",
+  options: [
+    "Vždy vychází z nulového základu",
+    "Je stanoven pouze na jeden rok",
+    "Po uplynutí období se přidává nový časový horizont, zajišťuje kontinuitu",
+    "Je vždy limitní a nelze ho překročit"
+  ],
+  answer: 2
+},
+  {
+  question: "Které tři hlavní výkazy tvoří podnikový rozpočet?",
+  options: [
+    "Rozvaha, cash flow a účetní deník",
+    "Rozpočtová rozvaha, rozpočtová výsledovka, rozpočtový cash flow",
+    "Plán prodeje, plán výroby, plán mezd",
+    "Přímé, nepřímé a režijní náklady"
+  ],
+  answer: 1
+},
+  {
+  question: "Jaký je základní cíl rozpočtové výsledovky?",
+  options: [
+    "Sledovat tok peněz",
+    "Plánovat zisky z investic",
+    "Rozpočtovat zisk nebo ztrátu podniku",
+    "Zajistit solventnost firmy"
+  ],
+  answer: 2
+},
+  {
+  question: "Jaký je hlavní rozdíl mezi přístupem 'top-down' a 'bottom-up' při tvorbě rozpočtů?",
+  options: [
+    "Bottom-up je rychlejší než top-down",
+    "Top-down začíná od nižších středisek, bottom-up od vedení",
+    "Top-down stanovuje cíle vedením, bottom-up začíná návrhem na nižších úrovních",
+    "Oba přístupy jsou zcela shodné"
+  ],
+  answer: 2
+},
+  {
+  question: "Jaký je hlavní účel controllingu v podniku?",
+  options: [
+    "Zajištění účetního auditu",
+    "Evidence majetku a závazků",
+    "Zvýšení efektivity řízení prostřednictvím hodnotových nástrojů",
+    "Kontrola kvality výrobků"
+  ],
+  answer: 2
+},
+  {
+  question: "Který pracovník v podniku zodpovídá za metodiku kalkulací, rozpočtování a informování o odchylkách?",
+  options: [
+    "Vedoucí výroby",
+    "Controller",
+    "Finanční účetní",
+    "Manažer lidských zdrojů"
+  ],
+  answer: 1
+},
+  {
+  question: "Která z následujících činností je součástí controllingu?",
+  options: [
+    "Vedení personální agendy",
+    "Vystavování faktur",
+    "Plánování, vyhodnocení a návrh opatření",
+    "Pouze účetní evidence"
+  ],
+  answer: 2
+},
+  {
+  question: "Jaký je vztah mezi manažerským účetnictvím a controllingem?",
+  options: [
+    "Jsou totožné pojmy",
+    "Controlling vychází z manažerského účetnictví a rozšiřuje jeho funkce o řízení",
+    "Controlling je pouze součást účetnictví",
+    "Manažerské účetnictví je zastaralý název pro controlling"
+  ],
+  answer: 1
+},
+  {
+  question: "Co je cílem standardizace řídicích postupů v rámci controllingu?",
+  options: [
+    "Snížení platů manažerům",
+    "Zvýšení výrobních kapacit",
+    "Stanovení pravidel a směrnic pro řízení aktivit",
+    "Zavedení automatického účetního systému"
+  ],
+  answer: 2
+},
+ {
+  question: "Co označuje levá strana rozvahy podniku?",
+  options: [
+    "Kapitálovou strukturu",
+    "Majetkovou strukturu",
+    "Výnosy",
+    "Náklady"
+  ],
+  answer: 1
+},
+  {
+  question: "Co je hlavní charakteristikou oběžného majetku?",
+  options: [
+    "Neodepisuje se a zůstává v podniku dlouhodobě",
+    "Je tvořen pouze nemovitostmi",
+    "Rychle se mění zpět v peněžní formu",
+    "Skládá se z pasivních účtů"
+  ],
+  answer: 2
+},
+  {
+  question: "Co znamená pojem 'finanční páka'?",
+  options: [
+    "Zvýšení daní při využívání cizího kapitálu",
+    "Situace, kdy výnosnost aktiv převyšuje náklady na cizí kapitál",
+    "Snížení likvidity v důsledku investic",
+    "Používání pouze vlastního kapitálu"
+  ],
+  answer: 1
+},
+  {
+  question: "Který z následujících faktorů NEpatří mezi typické složky finančního plánu?",
+  options: [
+    "Plán tržeb",
+    "Rozbor SWOT",
+    "Plán nákladů",
+    "Plán investic"
+  ],
+  answer: 1
+},
+  {
+  question: "Jaký je cíl optimalizace kapitálové struktury?",
+  options: [
+    "Zvýšit podíl vlastního kapitálu bez ohledu na náklady",
+    "Minimalizovat celkové náklady na kapitál (WACC)",
+    "Zajistit 100% financování z cizích zdrojů",
+    "Vytvořit pouze krátkodobý finanční plán"
+  ],
+  answer: 1
+},
+{
+  question: "Co je hlavní podstatou investice v ekonomickém pojetí?",
+  options: [
+    "Okamžitá spotřeba pro zvýšení obratu",
+    "Odložená spotřeba za účelem budoucího zisku",
+    "Převod majetku na jiný subjekt",
+    "Přímé navýšení mzdy zaměstnancům"
+  ],
+  answer: 1
+},
+  {
+  question: "Která z následujících metod měření efektivnosti investic přihlíží k faktoru času?",
+  options: [
+    "Statická metoda",
+    "Účetní návratnost",
+    "Dynamická metoda",
+    "Index rentability"
+  ],
+  answer: 2
+},
+  {
+  question: "Co NEpatří mezi vlastní zdroje financování investic?",
+  options: [
+    "Odpisy",
+    "Zisk",
+    "Leasing",
+    "Nově vydané akcie"
+  ],
+  answer: 2
+},
+  {
+  question: "Co znamená OPEX v investičním plánování podniku?",
+  options: [
+    "Odpisový plán",
+    "Provozní výdaje zahrnované do nákladů",
+    "Výdaje na dlouhodobý majetek",
+    "Výnosové položky rozpočtu"
+  ],
+  answer: 1
+},
+  {
+  question: "Jaké tři hlavní faktory se sledují při hodnocení investičního projektu?",
+  options: [
+    "Odpisy, zůstatková hodnota, nákladovost",
+    "Rentabilita, riziko, doba návratnosti",
+    "Výnos, objem výroby, investiční úvěr",
+    "Cash flow, náklady, účetní zisk"
+  ],
+  answer: 1
+},
+{
+  question: "Co je hlavním účelem finanční analýzy podniku?",
+  options: [
+    "Stanovení výše daní podniku",
+    "Zjištění výše zůstatku hotovosti na účtu",
+    "Posouzení finančního zdraví a výkonnosti podniku",
+    "Stanovení odměn pro zaměstnance"
+  ],
+  answer: 2
+},
+  {
+  question: "Které účetní výkazy slouží jako primární zdroj finanční analýzy?",
+  options: [
+    "Pouze rozvaha",
+    "Pouze výkaz zisků a ztrát",
+    "Rozvaha, výkaz zisků a ztrát, výkaz cash flow",
+    "Pouze výkaz cash flow"
+  ],
+  answer: 2
+},
+  {
+  question: "Co zkoumá horizontální analýza finančních výkazů?",
+  options: [
+    "Podíl jednotlivých položek na celkových aktivech",
+    "Strukturu daného výkazu v jednom období",
+    "Vývoj hodnot v čase a změny mezi obdobími",
+    "Peníze, které podnik vynakládá na mzdy"
+  ],
+  answer: 2
+},
+  {
+  question: "Vertikální analýza rozvahy vyjadřuje položky jako procento z čeho?",
+  options: [
+    "Z celkových výnosů",
+    "Z peněžních toků",
+    "Z celkových aktiv nebo pasiv",
+    "Z cash flow"
+  ],
+  answer: 2
+},
+  {
+  question: "Který typ analýzy je nejvhodnější pro sledování schopnosti podniku generovat hotovost?",
+  options: [
+    "Horizontální analýza",
+    "Vertikální analýza",
+    "Analýza cash flow",
+    "Analýza majetkové struktury"
+  ],
+  answer: 2
+},
+{
+  question: "Co je hlavním cílem sanace podniku?",
+  options: [
+    "Zvýšení daní",
+    "Změna organizační struktury",
+    "Ozdravení a obnova finanční výkonnosti a prosperity firmy",
+    "Propagace nových výrobků"
+  ],
+  answer: 2
+},
+  {
+  question: "Která z následujících možností je interní příčinou krize podniku?",
+  options: [
+    "Změna měnové politiky",
+    "Chyby v řízení podniku",
+    "Pokles HDP",
+    "Změna legislativy"
+  ],
+  answer: 1
+},
+  {
+  question: "Co znamená pojem 'turnaround' v řízení podniku?",
+  options: [
+    "Změna právní formy podniku",
+    "Obrat podniku od úpadku k prosperitě",
+    "Likvidace firmy",
+    "Přechod podniku na zahraniční trhy"
+  ],
+  answer: 1
+},
+  {
+  question: "Jaké je první stádium krize podle vývojových fází?",
+  options: [
+    "Stádium úplného bankrotu",
+    "Stádium ozdravení",
+    "Stádium ohrožení",
+    "Stádium sanace"
+  ],
+  answer: 2
+},
+  {
+  question: "Který sanační program se zaměřuje na okamžité a radikální zásahy do financování podniku?",
+  options: [
+    "Dlouhodobý sanační program",
+    "Krátkodobý sanační program",
+    "Střednědobý program",
+    "Strategický plán"
+  ],
+  answer: 1
+},
+  {
+  question: "Co je hlavním cílem metody diskontovaných peněžních toků (DCF)?",
+  options: [
+    "Stanovit účetní hodnotu majetku",
+    "Stanovit současnou hodnotu budoucích výnosů podniku",
+    "Zjistit historické náklady na pořízení aktiv",
+    "Odhadnout aktuální cenu akcie na burze"
+  ],
+  answer: 1
+},
+  {
+  question: "Jaký diskontní faktor se typicky používá v metodě DCF?",
+  options: [
+    "Úrok z bankovního úvěru",
+    "Průměrná mzda v odvětví",
+    "WACC (vážené průměrné náklady kapitálu)",
+    "Inflace"
+  ],
+  answer: 2
+},
+  {
+  question: "Která metoda oceňování vychází z tržní ceny akcie a je vhodná pro podniky na burze?",
+  options: [
+    "EVA",
+    "Metoda kapitalizovaných výnosů",
+    "DCF metoda",
+    "Tržní přidaná hodnota (MVA)"
+  ],
+  answer: 3
+},
+  {
+  question: "Co je multiplikátor ve srovnávací metodě oceňování?",
+  options: [
+    "Koeficient určující výši daňové zátěže",
+    "Index pro výpočet úrokové míry",
+    "Ukazatel jako např. zisk nebo tržby, podle kterého se odvozuje hodnota firmy",
+    "Základ pro výpočet odpisů dlouhodobého majetku"
+  ],
+  answer: 2
+},
+  {
+  question: "Jak se liší hodnota podniku od jeho ceny?",
+  options: [
+    "Cena je vždy vyšší než hodnota",
+    "Hodnota je objektivně měřitelná veličina",
+    "Hodnota je subjektivní a závisí na podmínkách a účelu ocenění, zatímco cena je skutečně zaplacená částka",
+    "Cenu určuje stát, hodnotu trh"
+  ],
+  answer: 2
+});
+
+
+
+
+
+
+
+
+
+
+
+
 
 
