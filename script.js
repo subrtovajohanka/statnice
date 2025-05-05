@@ -38,9 +38,6 @@ function showQuestion() {
 
     optionsEl.appendChild(wrapper);
 }
-}
-    });
-}
 
 function selectOption(button, index) {
     const correct = questions[currentQuestion].answer;
