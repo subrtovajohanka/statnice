@@ -8,61 +8,29 @@
 <body>
     <header>
         <h1>Státnice UCP – obor MDCR</h1>
-        <h2 id="countdown" class="countdown-animated">⏳ Načítám odpočet...</h2>
-
-<style>
-  .countdown-animated {
-    text-align: center;
-    margin-top: 1rem;
-    font-size: 1.5rem;
-    color: #b03060;
-    animation: pulse 2s infinite;
-    transition: color 0.3s ease;
-  }
-
-  @keyframes pulse {
-    0% {
-      transform: scale(1);
-      color: #b03060;
-    }
-    50% {
-      transform: scale(1.1);
-      color: #ff6f61;
-    }
-    100% {
-      transform: scale(1);
-      color: #b03060;
-    }
-  }
-</style>
-
-<script>
-  const targetDate = new Date("2025-06-02T08:00:00").getTime();
-
+       <script>
   function updateCountdown() {
     const now = new Date().getTime();
-    const distance = targetDate - now;
+    const examDate = new Date("2025-06-02T00:00:00").getTime(); // začátek státnic
+    const distance = examDate - now;
 
-    const countdownEl = document.getElementById("countdown");
-
-    if (distance < 0) {
-      countdownEl.innerHTML = "🎓 Už máš po státnicích! Gratulujeme!";
-      countdownEl.classList.remove("countdown-animated");
-      countdownEl.style.color = "#2e7d32"; // zelená
+    if (distance <= 0) {
+      document.getElementById("countdown").innerText = "🎓 Státnice právě probíhají!";
       return;
     }
 
     const days = Math.floor(distance / (1000 * 60 * 60 * 24));
     const hours = Math.floor((distance / (1000 * 60 * 60)) % 24);
     const minutes = Math.floor((distance / (1000 * 60)) % 60);
+    const seconds = Math.floor((distance / 1000) % 60);
 
-    countdownEl.innerHTML = `⏳ Do státnic zbývá: <strong>${days} dní</strong>, ${hours} h, ${minutes} min`;
+    document.getElementById("countdown").innerText =
+      `⏳ Do státnic zbývá ${days} dní, ${hours} h, ${minutes} min, ${seconds} s`;
   }
 
-  updateCountdown(); 
-  setInterval(updateCountdown, 60000);
+  setInterval(updateCountdown, 1000);
+  updateCountdown(); // spustí se hned při načtení
 </script>
-
     </header>
 
     <main>
