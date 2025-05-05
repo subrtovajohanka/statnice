@@ -1040,7 +1040,9 @@ window.questions = [
     "Cenu určuje stát, hodnotu trh"
   ],
   answer: 2
-});
+}
+];
+
 
 
 
