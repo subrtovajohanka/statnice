@@ -208,6 +208,17 @@ footer {
   font-weight: bold;
   margin-left: 8px;
 }
+.option-button.correct {
+  background-color: #d4edda; 
+}
+
+.option-button.wrong {
+  background-color: #f8d7da; 
+}
+.option-button.correct,
+.option-button.wrong {
+  font-weight: bold;
+}
 .disclaimer {
   background: #fff0f5;
   border-left: 5px solid #d28a8a;
