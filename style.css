@@ -150,23 +150,6 @@ footer {
   gap: 0.5rem;
   margin-top: 1rem;
 }
-
-.option-button {
-  width: 100%;
-  max-width: 400px;
-  padding: 0.75rem 1rem;
-  font-size: 1rem;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  min-height: 48px;
-}
-
 #options {
   display: flex;
   flex-direction: column;
@@ -195,28 +178,27 @@ footer {
 #next-btn:hover {
   background: #8a4a3f;
 }
-.option-button.correct::after {
+.option.correct {
+  background-color: #d4edda;
+}
+.option.correct::after {
   content: " ✓";
   color: green;
   font-weight: bold;
   margin-left: 8px;
 }
 
-.option-button.wrong::after {
+.option.incorrect {
+  background-color: #f8d7da;
+}
+.option.incorrect::after {
   content: " ✗";
   color: red;
   font-weight: bold;
   margin-left: 8px;
 }
-.option-button.correct {
-  background-color: #d4edda; 
-}
-
-.option-button.wrong {
-  background-color: #f8d7da; 
-}
-.option-button.correct,
-.option-button.wrong {
+.option.correct,
+.option.incorrect {
   font-weight: bold;
 }
 .disclaimer {
