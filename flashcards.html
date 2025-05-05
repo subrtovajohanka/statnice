@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Flashcards</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Flashcards režim</h1>
+    <div id="flashcard-container">
+        <div id="flashcard" onclick="flipCard()">Načítám...</div>
+        <div>
+            <button onclick="markKnow(true)">Umím</button>
+            <button onclick="markKnow(false)">Neumím</button>
+        </div>
+    </div>
+    <script src="questions_mikro.js"></script>
+    <script src="flashcards.js"></script>
+</body>
+</html>
