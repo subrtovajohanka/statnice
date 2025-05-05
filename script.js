@@ -51,14 +51,13 @@ function selectOption(button, index) {
         btn.disabled = true;
         if (i === correct) {
             btn.classList.add("correct");
+        } else if (i === index) {
+            btn.classList.add("wrong");
         }
     });
 
     if (index === correct) {
-        button.classList.add("correct");
         score++;
-    } else {
-        button.classList.add("wrong");
     } 
 }
 nextBtn.addEventListener("click", () => {
